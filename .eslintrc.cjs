@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
   },
   parser: "vue-eslint-parser",
   parserOptions: {
@@ -14,4 +14,4 @@ module.exports = {
     semi: ["error", "never"],
   },
   ignorePatterns: ["components/ui/**"],
-};
+}

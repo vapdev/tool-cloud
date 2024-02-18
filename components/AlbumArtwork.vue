@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Album } from './albums'
-import { playlists } from './playlists'
-import { cn } from '@/lib/utils'
+import type { Album } from "./albums"
+import { playlists } from "./playlists"
+import { cn } from "@/lib/utils"
 import {
   ContextMenu,
   ContextMenuCheckboxItem,
@@ -16,16 +16,16 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from '@/components/ui/context-menu'
+} from "@/components/ui/context-menu"
 
 interface AlbumArtworkProps {
   album: Album
-  aspectRatio?: 'portrait' | 'square'
+  aspectRatio?: "portrait" | "square"
   width?: number
   height?: number
 }
 withDefaults(defineProps<AlbumArtworkProps>(), {
-  aspectRatio: 'portrait',
+  aspectRatio: "portrait",
 })
 </script>
 
@@ -39,12 +39,13 @@ withDefaults(defineProps<AlbumArtworkProps>(), {
             :alt="album.name"
             :width="width"
             :height="height"
-
-            :class="cn(
-              'h-auto w-auto object-cover transition-all hover:scale-105',
-              aspectRatio === 'portrait' ? 'aspect-[3/4]' : 'aspect-square',
-            )"
-          >
+            :class="
+              cn(
+                'h-auto w-auto object-cover transition-all hover:scale-105',
+                aspectRatio === 'portrait' ? 'aspect-[3/4]' : 'aspect-square',
+              )
+            "
+          />
         </div>
       </ContextMenuTrigger>
       <ContextMenuContent class="w-40">
@@ -68,7 +69,9 @@ withDefaults(defineProps<AlbumArtworkProps>(), {
                 class="mr-2 h-4 w-4"
                 viewBox="0 0 24 24"
               >
-                <path d="M21 15V6M18.5 18a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM12 12H3M16 6H3M12 18H3" />
+                <path
+                  d="M21 15V6M18.5 18a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM12 12H3M16 6H3M12 18H3"
+                />
               </svg>
               {{ playlist }}
             </ContextMenuItem>

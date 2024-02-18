@@ -7,15 +7,13 @@ import {
   MenubarSeparator,
   MenubarShortcut,
   MenubarTrigger,
-} from '@/components/ui/menubar'
+} from "@/components/ui/menubar"
 </script>
 
 <template>
   <Menubar class="rounded-none border-b border-none px-2 lg:px-4">
     <MenubarMenu>
-      <MenubarTrigger class="font-bold">
-        Music
-      </MenubarTrigger>
+      <MenubarTrigger class="font-bold"> Music </MenubarTrigger>
       <MenubarContent>
         <MenubarItem>About Music</MenubarItem>
         <MenubarSeparator />
@@ -36,9 +34,7 @@ import {
       </MenubarContent>
     </MenubarMenu>
     <MenubarMenu>
-      <MenubarTrigger class="relative">
-        File
-      </MenubarTrigger>
+      <MenubarTrigger class="relative"> File </MenubarTrigger>
       <MenubarContent>
         <MenubarSub>
           <MenubarSubTrigger>New</MenubarSubTrigger>
@@ -53,9 +49,7 @@ import {
               Smart Playlist... <MenubarShortcut>⌥⌘N</MenubarShortcut>
             </MenubarItem>
             <MenubarItem>Playlist Folder</MenubarItem>
-            <MenubarItem disabled>
-              Genius Playlist
-            </MenubarItem>
+            <MenubarItem disabled> Genius Playlist </MenubarItem>
           </MenubarSubContent>
         </MenubarSub>
         <MenubarItem>
@@ -75,23 +69,17 @@ import {
             <MenubarItem>Export Library...</MenubarItem>
             <MenubarSeparator />
             <MenubarItem>Import Playlist...</MenubarItem>
-            <MenubarItem disabled>
-              Export Playlist...
-            </MenubarItem>
+            <MenubarItem disabled> Export Playlist... </MenubarItem>
             <MenubarItem>Show Duplicate Items</MenubarItem>
             <MenubarSeparator />
             <MenubarItem>Get Album Artwork</MenubarItem>
-            <MenubarItem disabled>
-              Get Track Names
-            </MenubarItem>
+            <MenubarItem disabled> Get Track Names </MenubarItem>
           </MenubarSubContent>
         </MenubarSub>
         <MenubarItem>
           Import... <MenubarShortcut>⌘O</MenubarShortcut>
         </MenubarItem>
-        <MenubarItem disabled>
-          Burn Playlist to Disc...
-        </MenubarItem>
+        <MenubarItem disabled> Burn Playlist to Disc... </MenubarItem>
         <MenubarSeparator />
         <MenubarItem>
           Show in Finder <MenubarShortcut>⇧⌘R</MenubarShortcut>
@@ -163,7 +151,9 @@ import {
               viewBox="0 0 24 24"
             >
               <circle cx="12" cy="12" r="10" />
-              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              <path
+                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+              />
             </svg>
           </MenubarShortcut>
         </MenubarItem>
@@ -173,50 +163,28 @@ import {
       <MenubarTrigger>View</MenubarTrigger>
       <MenubarContent>
         <MenubarCheckboxItem>Show Playing Next</MenubarCheckboxItem>
-        <MenubarCheckboxItem checked>
-          Show Lyrics
-        </MenubarCheckboxItem>
+        <MenubarCheckboxItem checked> Show Lyrics </MenubarCheckboxItem>
         <MenubarSeparator />
-        <MenubarItem inset disabled>
-          Show Status Bar
-        </MenubarItem>
+        <MenubarItem inset disabled> Show Status Bar </MenubarItem>
         <MenubarSeparator />
-        <MenubarItem inset>
-          Hide Sidebar
-        </MenubarItem>
-        <MenubarItem disabled inset>
-          Enter Full Screen
-        </MenubarItem>
+        <MenubarItem inset> Hide Sidebar </MenubarItem>
+        <MenubarItem disabled inset> Enter Full Screen </MenubarItem>
       </MenubarContent>
     </MenubarMenu>
     <MenubarMenu>
-      <MenubarTrigger class="hidden md:block">
-        Account
-      </MenubarTrigger>
+      <MenubarTrigger class="hidden md:block"> Account </MenubarTrigger>
       <MenubarContent>
-        <MenubarLabel inset>
-          Switch Account
-        </MenubarLabel>
+        <MenubarLabel inset> Switch Account </MenubarLabel>
         <MenubarSeparator />
         <MenubarRadioGroup value="benoit">
-          <MenubarRadioItem value="andy">
-            Andy
-          </MenubarRadioItem>
-          <MenubarRadioItem value="benoit">
-            Benoit
-          </MenubarRadioItem>
-          <MenubarRadioItem value="Luis">
-            Luis
-          </MenubarRadioItem>
+          <MenubarRadioItem value="andy"> Andy </MenubarRadioItem>
+          <MenubarRadioItem value="benoit"> Benoit </MenubarRadioItem>
+          <MenubarRadioItem value="Luis"> Luis </MenubarRadioItem>
         </MenubarRadioGroup>
         <MenubarSeparator />
-        <MenubarItem inset>
-          Manage Famliy...
-        </MenubarItem>
+        <MenubarItem inset> Manage Famliy... </MenubarItem>
         <MenubarSeparator />
-        <MenubarItem inset>
-          Add Account...
-        </MenubarItem>
+        <MenubarItem inset> Add Account... </MenubarItem>
       </MenubarContent>
     </MenubarMenu>
   </Menubar>

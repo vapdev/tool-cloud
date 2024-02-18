@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Playlist } from './playlists'
+import type { Playlist } from "./playlists"
 
 interface SidebarProps {
   playlists: Playlist[]
@@ -12,9 +12,7 @@ defineProps<SidebarProps>()
   <div :class="'pb-12'">
     <div class="space-y-4 py-4">
       <div class="px-3 py-2">
-        <h2 class="mb-2 px-4 text-lg font-semibold tracking-tight">
-          Discover
-        </h2>
+        <h2 class="mb-2 px-4 text-lg font-semibold tracking-tight">Discover</h2>
         <div class="space-y-1">
           <Button variant="secondary" class="w-full justify-start">
             <svg
@@ -72,9 +70,7 @@ defineProps<SidebarProps>()
         </div>
       </div>
       <div class="px-3 py-2">
-        <h2 class="mb-2 px-4 text-lg font-semibold tracking-tight">
-          Library
-        </h2>
+        <h2 class="mb-2 px-4 text-lg font-semibold tracking-tight">Library</h2>
         <div class="space-y-1">
           <Button variant="ghost" class="w-full justify-start">
             <svg

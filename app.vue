@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import Menu from './components/Menu.vue'
-import Sidebar from './components/Sidebar.vue'
-import AlbumArtwork from './components/AlbumArtwork.vue'
+import Menu from "./components/Menu.vue"
+import Sidebar from "./components/Sidebar.vue"
+import AlbumArtwork from "./components/AlbumArtwork.vue"
 
-import { playlists } from './components/playlists'
-import { listenNowAlbums, madeForYouAlbums } from './components/albums'
-import { PlusCircledIcon } from '@radix-icons/vue'
+import { playlists } from "./components/playlists"
+import { listenNowAlbums, madeForYouAlbums } from "./components/albums"
+import { PlusCircledIcon } from "@radix-icons/vue"
 </script>
 
 <template>
@@ -23,12 +23,8 @@ import { PlusCircledIcon } from '@radix-icons/vue'
                     <TabsTrigger value="music" class="relative">
                       Music
                     </TabsTrigger>
-                    <TabsTrigger value="podcasts">
-                      Podcasts
-                    </TabsTrigger>
-                    <TabsTrigger value="live" disabled>
-                      Live
-                    </TabsTrigger>
+                    <TabsTrigger value="podcasts"> Podcasts </TabsTrigger>
+                    <TabsTrigger value="live" disabled> Live </TabsTrigger>
                   </TabsList>
                   <div class="ml-auto mr-4">
                     <Button>
@@ -37,10 +33,7 @@ import { PlusCircledIcon } from '@radix-icons/vue'
                     </Button>
                   </div>
                 </div>
-                <TabsContent
-                  value="music"
-                  class="border-none p-0 outline-none"
-                >
+                <TabsContent value="music" class="border-none p-0 outline-none">
                   <div class="flex items-center justify-between">
                     <div class="space-y-1">
                       <h2 class="text-2xl font-semibold tracking-tight">
@@ -119,6 +112,4 @@ import { PlusCircledIcon } from '@radix-icons/vue'
     </div>
   </div>
 </template>
-<script setup>
-
-</script>
+<script setup></script>
