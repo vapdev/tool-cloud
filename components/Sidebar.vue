@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { sidebarGroups } from "./sidebarGroups"
+import { sidebarGroups } from "./data/sidebarGroups"
+
+defineEmits(["change"])
 </script>
 
 <template>
@@ -19,12 +21,14 @@ import { sidebarGroups } from "./sidebarGroups"
             :key="index"
             variant="ghost"
             class="w-full justify-start"
+            @click="() => $emit('change', item.component)"
           >
             <!-- ... -->
-            {{ item }}
+            {{ item.title }}
           </Button>
         </div>
       </div>
     </div>
   </div>
 </template>
+./data/sidebarGroups

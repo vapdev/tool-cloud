@@ -9,7 +9,7 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar"
 import { SunIcon, MoonIcon } from "@radix-icons/vue"
-import { menuGroups } from "./menuGroups"
+import { menuGroups } from "./data/menuGroups"
 
 const darkMode = ref(false)
 
