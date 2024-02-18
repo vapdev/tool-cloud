@@ -12,6 +12,7 @@ module.exports = {
   plugins: [],
   rules: {
     semi: ["error", "never"],
+    "vue/multi-word-component-names": "off",
   },
   ignorePatterns: ["components/ui/**"],
 }

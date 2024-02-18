@@ -4,14 +4,9 @@ import { playlists } from "./playlists"
 import { cn } from "@/lib/utils"
 import {
   ContextMenu,
-  ContextMenuCheckboxItem,
   ContextMenuContent,
   ContextMenuItem,
-  ContextMenuLabel,
-  ContextMenuRadioGroup,
-  ContextMenuRadioItem,
   ContextMenuSeparator,
-  ContextMenuShortcut,
   ContextMenuSub,
   ContextMenuSubContent,
   ContextMenuSubTrigger,
@@ -21,7 +16,9 @@ import {
 interface AlbumArtworkProps {
   album: Album
   aspectRatio?: "portrait" | "square"
+  // eslint-disable-next-line vue/require-default-prop
   width?: number
+  // eslint-disable-next-line vue/require-default-prop
   height?: number
 }
 withDefaults(defineProps<AlbumArtworkProps>(), {
