@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import Conversor from "@/components/conversoes/Conversor.vue"
+</script>
 
 <template>
   <Conversor />

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Menu from "./components/Menu.vue"
 import Sidebar from "./components/Sidebar.vue"
+import { ArrowLeftIcon } from "@radix-icons/vue"
 
 const currentComponent = ref("Dashboard")
 
@@ -26,6 +27,10 @@ const components = {
           <Sidebar class="hidden lg:block" @change="trocarComponente" />
           <div class="col-span-3 lg:col-span-4 lg:border-l">
             <div class="h-full px-4 py-6 lg:px-8">
+              <div class="mb-4">
+                <ArrowLeftIcon class="h-6 w-6 inline-block" />
+                Voltar ao início
+              </div>
               <component :is="currentComponent" />
             </div>
           </div>
